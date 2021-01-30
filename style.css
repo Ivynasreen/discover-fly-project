@@ -145,3 +145,9 @@ nav ul li a:hover, a.active{
 footer {
     padding-top: 180px;
 }
+.alert {
+    display: none;
+    padding: 50px;
+    color: black;
+    border-radius: 10px;
+}
