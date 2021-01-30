@@ -166,10 +166,14 @@
         bookingArea.style.display = "none";
         const ticketArea = document.getElementById("ticket-area");
         ticketArea.style.display = "block";
+        const grandTotal = document.getElementById("grand-total").innerText;
+        if (grandTotal <= 0) {
+            alert("Please book a ticket");
+            document.getElementById("ticket-area").style.display = "none";
+            document.getElementById("booking-area").style.display = "block";
+        }
     })
-        
-    
-    
+   
     // First Class Btn Increase Handler
         // document.getElementById("first-class-increase").addEventListener("click", function() {
         //     const firstClassInput = document.getElementById("first-class-input");
